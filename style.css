@@ -1,3 +1,8 @@
 body {
   background-color: #1f2937;
 }
+
+.container{
+	color: paleturquoise;
+	font-size: 40px;
+}
