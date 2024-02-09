@@ -2,7 +2,46 @@ body {
   background-color: #1f2937;
 }
 
-.container{
-	color: paleturquoise;
-	font-size: 40px;
+.scontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  display: flex;
+  border-radius: 5px;
+  background-color: paleturquoise;
+  justify-content: center;
+}
+
+.container {
+  font-size: 60px;
+  color: paleturquoise;
+  display: flex;
+  justify-content: center;
+}
+
+.temp {
+  background-color: paleturquoise;
+  color: #1f2937;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+	padding: 5px;
+  flex-direction: row;
+	border-radius: 10px;
+}
+
+.tempChild {
+  color: #1f2937;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  flex-direction: row;
 }

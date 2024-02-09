@@ -17,7 +17,9 @@ function getCity() {
 			inputValue = searchItem.value;
 			searchItem.value = "";
 			console.log(inputValue);
-			getTemp(inputValue);
+			let temp_c = getTemp(inputValue);
+			console.log(temp_c);
+			showTemp(temp_c);
 		}
 	});
 }
@@ -29,8 +31,7 @@ async function getTemp(input) {
 		{ mode: "cors" },
 	);
 	let json = await response.json();
-	showTemp(json.current.temp_c);
-	showTemp(json.current.temp_f);
+	return json.current.temp_c.value;
 }
 
 getCity();
